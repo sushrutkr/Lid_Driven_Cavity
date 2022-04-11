@@ -36,7 +36,7 @@ program CFDCode
     
     t = 0    
     DO WHILE (t<tmax)
-        CALL set_bc()
+        CALL set_bc() !include both
 
         CALL ADSolver()
         
