@@ -18,7 +18,7 @@ END MODULE boundary_conditions
 
 SUBROUTINE readdata()
     USE global_variables
-    ! READing Input Data
+    ! Reading Input Data
     OPEN(2, file='input.dat', status='old')
     READ(2,*) 
     READ(2,*)
