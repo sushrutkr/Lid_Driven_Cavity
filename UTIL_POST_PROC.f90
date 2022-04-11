@@ -52,7 +52,7 @@ subroutine writepostproc()
     END DO
     
     
-    !Writing Files For Post Processing
+    !Writing Files For Post Processing in tecplot
     open(12, file='data.dat', status='unknown')
     WRITE(12,*) 'TITLE = "Post Processing Tecplot"'
     WRITE(12,*) 'VARIABLES = "X", "Y", "u", "v","Velocity Magnitude", "P", "Vorticity"'
