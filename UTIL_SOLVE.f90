@@ -53,6 +53,7 @@ subroutine PPESolver()
             END DO
             errorppe = MAXVAL(ABS(p) - ABS(pk))
             pk(:,:) = p(:,:)
+            !call set_neumann_bc()
         END DO
     END IF
 end subroutine
@@ -136,6 +137,7 @@ subroutine ADSolver()
         err(1) = errorx
         err(2) = errory
         error = MAXVAL(err) 
+        ! call set_ad_bc()
     END DO
     
     u(:,:) = ukp1(:,:)
